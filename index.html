@@ -1,0 +1,56 @@
+<!--index.html
+    html for NameStats
+    Pessie Mittelman
+    3/31/25-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NameStats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Name Stats</h1>
+    </header>
+
+    <main>
+        <article class="description">
+            <h2>Enter your name to find out more!</h2>
+            <p>This website uses three different APIs to predict your gender, age and nationality, based on your first name!</p>
+            <ul>
+                <li><strong>Gender:</strong> The <a href="https://genderize.io/documentation">Genderize API</a> allows you to check the statistical probability of a name being male or female.</li>
+                <li><strong>Age:</strong> The <a href="https://agify.io/documentation">Agify API</a> allows you to estimate the age of a person based on their first name.</li>
+                <li><strong>Nationality:</strong> The <a href="https://nationalize.io/documentation">Nationalize API</a> allows you to check the statistical probability of a name belonging to a certain nationality.</li>
+            </ul>
+        </article>
+
+        <article class="input-section">
+            <div id="nameField">
+                <label for="nameInput">First Name</label>
+                <input type="text" id="nameInput" name="firstName" placeholder="Shprintza" />
+            </div>
+            <button id="predictBtn" type="button">Go!</button>
+            <button id="resetBtn" type="button">Reset!</button>
+        </article>
+
+        <article class="result">
+            <h2>Results for your first name:</h2>
+            <p id="genderResult"><strong>Gender:</strong> --</p>
+            <p id="ageResult"><strong>Age:</strong> --</p>
+            <p id="nationalityResult"><strong>Nationality:</strong> --</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Pessie Mittelman 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
